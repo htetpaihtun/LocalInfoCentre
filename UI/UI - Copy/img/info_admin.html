@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<title>Information Admin Panel</title>
+		<link href="dashboard.css" rel="stylesheet">
+		<style>
+			.size{
+	border: 1px;
+	font-size: 18px;
+	padding-top:  50px;
+	padding-bottom: 50px;
+	padding-left: 30px;
+}
+.hotel{
+	background-color: #FFD54F;
+}
+.restaurant{
+	background-color: #FFECB3;
+}
+.touring{
+	background-color: #FFE082;
+}
+.local{
+	background-color: #B2DFDB;
+}
+.news{
+	background-color: #80CBC4;
+}
+.trendings{
+	background-color: #4DB6AC;
+}
+.weather{
+	background-color: #D1C4E9;
+}
+.contacts{
+	background-color: #B39DDB;
+}
+.history{
+	background-color: #9575CD;
+}
+
+		</style>
+		<script type="application/javascript" src="new_edit.js">
+    
+    </script>
+	</head>
+	<body onload="showDashboard()">
+
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0 display-4" href="#" onclick="showDashboard()">Local Information Centre</a>
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">Sign out</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span data-feather="home"></span>
+              Dashboard <span class="sr-only">(current)</span>
+            </a>
+          </li>
+
+          
+       
+
+          </li>
+          <li class="nav-item">
+          	<div class="d-flex nav-link">
+          		<div>
+          			<a>Locale</a>
+          		</div>
+          		<div class="ml-auto">
+          			<a class="d-inline" href="#" onclick="locale_edit()">Edit</a>
+          			<a class="d-inline" href="#" onclick="locale_new()">New</a>
+          		</div>
+          	</div>
+          </li>
+          <hr />
+          <li class="nav-item">
+          	<div class="d-flex nav-link">
+          		<div>
+          			<a>Restaurant</a>
+          		</div>
+          		<div class="ml-auto">
+          			<a class="d-inline" href="#" onclick="restaurant_edit()">Edit</a>
+          			<a class="d-inline" href="#" onclick="restaurant_new()">New</a>
+          		</div>
+          	</div>
+          </li>
+          <li class="nav-item">
+          	<div class="d-flex nav-link">
+          		<div>
+          			<a>Hotel</a>
+          		</div>
+          		<div class="ml-auto">
+          			<a class="d-inline" href="#" onclick="hotel_edit()">Edit</a>
+          			<a class="d-inline" href="#" onclick="hotel_new()">New</a>
+          		</div>
+          	</div>
+          </li>
+          <li class="nav-item">
+          	<div class="d-flex nav-link">
+          		<div>
+          			<a>Touring Company</a>
+          		</div>
+          		<div class="ml-auto">
+          			<a class="d-inline" href="#" onclick="tour_edit()">Edit</a>
+          			<a class="d-inline" href="#" onclick="tour_new()">New</a>
+          		</div>
+          	</div>
+          </li>
+          <hr />
+          <li class="nav-item">
+          	<div class="d-flex nav-link">
+          		<div>
+          			<a>News</a>
+          		</div>
+          		<div class="ml-auto">
+          			<a class="d-inline" href="#" onclick="news_edit()">Edit</a>
+          			<a class="d-inline" href="#" onclick="news_new()" >New</a>
+          		</div>
+          	</div>
+          </li>
+          <li class="nav-item">
+          	<div class="d-flex nav-link">
+          		<div>
+          			<a>Weather</a>
+          		</div>
+          		<div class="ml-auto">
+          			<a class="d-inline" href="#" onclick="weather_edit()">Edit</a>
+          			<a class="d-inline" href="#" onclick="weather_new()">New</a>
+          		</div>
+          	</div>
+          </li>
+          <li class="nav-item">
+          	<div class="d-flex nav-link">
+          		<div>
+          			<a>Trendings</a>
+          		</div>
+          		<div class="ml-auto">
+          			<a class="d-inline" href="#" onclick="trendings_edit()">Edit</a>
+          			<a class="d-inline" href="#" onclick="trendings_new()">New</a>
+          		</div>
+          	</div>
+          </li>
+          <li class="nav-item">
+          	<div class="d-flex nav-link">
+          		<div>
+          			<a>History</a>
+          		</div>
+          		<div class="ml-auto">
+          			<a class="d-inline" href="#" onclick="history_edit()">Edit</a>
+          			<a class="d-inline" href="#" onclick="history_new()">New</a>
+          		</div>
+          	</div>
+          </li>
+          <li class="nav-item">
+          	<div class="d-flex nav-link">
+          		<div>
+          			<a>Contacts</a>
+          		</div>
+          		<div class="ml-auto">
+          			<a class="d-inline" href="#" onclick="contacts_edit()">Edit</a>
+          			<a class="d-inline" href="#" onclick="contacts_new()">New</a>
+          		</div>
+          	</div>
+          </li>
+          
+          
+        </ul>
+
+        
+        
+      </div>
+    </nav>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+        <h1 class="h2" id="display-dashboard">Dashboard</h1>        
+  </div>
+
+
+      <div class="my-4 w-100" width="900" height="380" id="dummy_div">
+      	<p id="dummy_p"></p>
+
+      </div>
+
+
+	</body>
+</html>

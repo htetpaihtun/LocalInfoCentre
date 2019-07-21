@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<!-- <html lang="{{ str_replace('_', '-', app()->getLocale()) }}"> -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!-- bootstrap css -->
+        <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+
+        <!-- bootstrap js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="{{ asset('js/bootstrap.js') }}"></script>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+
+
+        <title> Local Information Centre </title>
+
+
+    </head>
+    <body>
+      <body class="text-center">
+ <form class="form-signin">
+<img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+<label for="inputEmail" class="sr-only">Email address</label>
+<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+<label for="inputPassword" class="sr-only">Password</label>
+<input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+<div class="checkbox mb-3">
+ <label>
+   <input type="checkbox" value="remember-me"> Remember me
+ </label>
+</div>
+<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+<p class="mt-5 mb-3 text-muted">© 2017-2019</p>
+</form>
+
+
+</body>
+
+
+
+
+
+
+    </body>
+</html>
+<div class="container">
+
+  <!-- login and sign up form changing script -->
+  <script>
+    function get(obj)
+    { return document.getElementById(obj); }
+    function showloginpanel()
+    {
+      get("signuppanel").style.display="none";
+      get("loginpanel").style.display="block";
+    }
+    function showsignuppanel()
+    {
+      get("signuppanel").style.display="block";
+      get("loginpanel").style.display="none";
+    }
+  </script>
+
+ <div class="panel" id="signuppanel">
+   <form class="form-signin" method="post" action="register.php" name="form_signin">
+     <div class="text-center mb-4"><!--<h1 class="h3 mb-3 font-weight-normal">Sign Up</h1>--></div>
+
+     <div class="form-label-group">
+       <label for="inputEmail">Email address</label>
+       <input id="inputEmail" class="form-control" name="email"
+                  placeholder="Email address" required="" autofocus="" type="email"><br>
+     </div>
+
+     <div class="form-label-group">
+       <label for="inputEmail">Username</label>
+       <input id="inputName" class="form-control" name="username"
+                  placeholder="Username" required="" autofocus="" type="username"><br>
+     </div>
+
+     <div class="form-label-group">
+       <label for="inputPassword">Password</label>
+       <input id="inputPassword" class="form-control" name="password"
+                  placeholder="Password" required="" type="password">
+        <small id="passwordHelpBlock" class="form-text text-muted">Your password must be 6-20 characters long.</small><br>
+     </div>
+
+     <div class="form-label-group">
+       <label for="inputConfirmPassword">Confirm-password</label>
+       <input id="inputConfirmPassword" class="form-control" name="re_password"
+                  placeholder="Confirm-Password" required="" type="password"><br>
+     </div>
+
+     <div class="checkbox mb-3">
+       <label>
+         <input value="remember-me" checked type="checkbox"> Remember me
+       </label>
+     </div>
+
+     <button class="btn btn-lg btn-primary btn-block" name="signup" type="signup">Sign up</button> <br>
+
+     <div class="form-label-group"> Already a member ? <a href="#" onclick="showloginpanel()" > Sign in </a> </div>
+
+   </form>
+</div>
+
+<div class="container">
+ <div class="panel" id="loginpanel" style="display: none">
+   <form class="form-signin" method="post" action="register.php" name="form_signin">
+     <div class="text-center mb-4"><!--<h1 class="h3 mb-3 font-weight-normal">Sign Up</h1>--></div>
+
+     <div class="form-label-group">
+       <label for="inputEmail">Email address</label>
+       <input id="inputEmail" class="form-control" name="email"
+                  placeholder="Email address" required="" autofocus="" type="email"><br>
+     </div>
+
+     <div class="form-label-group">
+       <label for="inputPassword">Password</label>
+       <input id="inputPassword" class="form-control" name="password"
+                  placeholder="Password" required="" type="password"> <br>
+     </div>
+
+     <div class="checkbox mb-3">
+       <label>
+         <input value="remember-me" checked type="checkbox"> Remember me
+       </label>
+     </div>
+
+     <button class="btn btn-lg btn-primary btn-block" name="signin" type="signin">Sign in</button> <br>
+
+     <div class="form-label-group"> Not a member yet ? <a href="#" onclick="showsignuppanel()" > Sign up </a> </div>
+
+   </form>
+ </div>
+</div>
+</div>

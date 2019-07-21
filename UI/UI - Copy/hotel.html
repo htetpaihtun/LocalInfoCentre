@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- <html lang="{{ str_replace('_', '-', app()->getLocale()) }}"> -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- custom style -->
+        <!-- <link href="{{asset('css/Style.css')}}" rel="stylesheet"> -->
+
+        <!-- font awesome  -->
+        <!-- <link href="{{asset('css/all.css')}}" rel="stylesheet">
+        <script src="{{asset('js/all.js')}}" charset="utf-8"></script> -->
+        <link rel="stylesheet" href="css/all.css">
+        <script src="js/all.js" charset="utf-8"></script>
+
+        <!-- akkz css -->
+        <link rel="stylesheet" href="css/akkz.css">
+
+        <!-- bootstrap css -->
+        <!-- <link href="{{asset('css/bootstrap.css') }}" rel="stylesheet"> -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <!-- bootstrap js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="{{ asset('js/bootstrap.js') }}"></script>
+        <script src="js/bootstrap.js" charset="utf-8"></script>
+
+        <!-- Fonts -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"> -->
+
+        <title>Hotels</title>
+
+
+    </head>
+
+    <body>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mx-5">
+          <a class="navbar-brand" href="index.html">
+            <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            YIC
+          </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-end" id="navbars">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Search">
+              </form>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link"> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"> </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bell"></i></a>
+              <div class="dropdown-menu" aria-labelledby="dropdown08">
+                <a class="dropdown-item" href="#"> Your Booking to Sedona Hotel <br> has confimed. </a>
+                <a class="dropdown-item" href="#">Your booking to Pan Swal Taw <br> restaurant has confirmed</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link"></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown08">
+                <a class="dropdown-item text-dark disabled"> Booking
+                  <ul>
+                    <a class="dropdown-item text-dark" href="#">Restaurants</a>
+                    <a class="dropdown-item text-dark" href="#">Hotels</a>
+                    <a class="dropdown-item text-dark" href="#">Tour</a>
+                  </ul>
+                </a>
+                <a class="dropdown-item" href="#">News</a>
+                <a class="dropdown-item" href="#">Trendings</a>
+                <a class="dropdown-item" href="#">History</a>
+                <a class="dropdown-item" href="#">Important Contacts</a>
+                <a class="dropdown-item" href="#">Weather Updates</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link"></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="main">
+        <div class="container my-3 py-3">
+       <p class="my-2 text-center h1">Hotels in Yangon</p>
+
+        <div class="my-4 mx-2 list-group">
+        <a href="https://sedona-hotel-yangon.itinera.com/?lbl=ga-9331943&gclid=CjwKCAjw0ZfoBRB4EiwASUMdYcMU8o5_rHDJpqo1JFnEcvcuPi7xHEHHaXnQKOvi6KXVy6F1EV6FMRoC1NsQAvD_BwE" class="list-group-item">
+        <img src = "img/sedona.jpg" class="img-fluid float-left">
+        <div class="mt-3 text-center" id="textgroup">
+          <p class="h5"> Sedona </p>
+          <p class="h5">Address: No. 1 Kabar Aye Pagoda Rd, Yangon 11081</p>
+          <p class="h5">Ph:  01 860 5377 </p>
+        </div></a>
+      </div>
+
+        <div class="my-4 mx-2 list-group">
+        <a href="https://www.expedia.com/Hotel-Search?selected=17852310&locale=en_US&HotelID=17852310&semcid=US.UB.GOOGLE.PT-c-EN.HOTEL&semdtl=a11144888778.b154649507912.r16fb10cfbd9c3fbcac7b92b67badc0ec7f943c87981679bdcfb5c325e5cf18a74.g1kwd-301936324770.i1.d1280157159909.e1c.j11010216.k11010216.f11t1.n1.l1g.h1e.m1&gclid=CjwKCAjw0ZfoBRB4EiwASUMdYedOxNSJefrx9A0Bb1qnBWN3bFMkDj_7fuh0XJ_TKSTrjwjGdPr5FxoCk4MQAvD_BwE" class="list-group-item">
+        <img src = "img/lotte1.jpeg" class="img-fluid float-left">
+        <div class="mt-3 text-center" id="textgroup">
+          <p class="h5"> Lotte </p>
+          <p class="h5">Address: No. 82, Sin Phyu Shin Avenue Pyay Road, 6½ Mile, Ward 11 MM, Yangon 11052</p>
+          <p class="h5">Ph: 01 935 1000 </p>
+        </div> </a></div>
+
+        <div class="my-4 mx-2 list-group">
+        <a href="https://www.panpacific.com/en/hotels-and-resorts/pp-yangon/rooms.html?gclid=CjwKCAjwuqfoBRAEEiwAZErCsgLmFonupicUnqrssGujFlKKLnPOHttaGuDDWPGOf-ewgb9fh1cQchoCxcAQAvD_BwE&gclsrc=aw.ds" class="list-group-item">
+        <img src = "img/pan.jpeg" class="img-fluid float-left">
+        <div class="mt-3 text-center" id="textgroup">
+          <p class="h5"> Pan Pacafic </p>
+          <p class="h5">Address: Corner of Bogyoke Aung San Road and, Shwedagon Pagoda Rd, Yangon</p>
+          <p class="h5">Ph: 01 925 3810 </p>
+        </div> </a></div>
+
+        <div class="my-4 mx-2 list-group">
+        <a href="https://www.shangri-la.com/yangon/suleshangrila/?WT.mc_id=SLIM_201811_GLOBAL_SEM_GOOGLE_SSYN-Brand_Brand-Exact-RSA_sule%20shangri%20la%20yangon_EN&ds_rl=1241383&gclid=CjwKCAjwuqfoBRAEEiwAZErCstkf1c4nF1acztc1iZ5C5Rt06svpfzqmOGhwGXVgEpRFNHXjCd_vWBoCmhwQAvD_BwE&gclsrc=aw.ds" class="list-group-item">
+        <img src = "img/sulae.jpeg" class="img-fluid float-left">
+        <div class="mt-3 text-center" id="textgroup">
+          <p class="h5"> Sule Shangri-La Hotel  </p>
+          <p class="h5">Address: #223 ,Sule Pagoda Road, Yangon</p>
+          <p class="h5">Ph: </p>
+        </div></a></div>
+
+        <div class="my-4 mx-2 list-group">
+        <a href="cloverhotel.html" class="list-group-item">
+        <img src = "img/clover.jpeg" class="img-fluid float-left">
+        <div class="mt-3 text-center" id="textgroup">
+          <p class="h5"> Clover Hotel </p>
+          <p class="h5">Address:  No(915), Rose Road, Lanmadaw</p>
+          <p class="h5">Ph: 01 210 2358 </p>
+        </div> </a></div>
+
+
+
+      </div>
+    </div>
+
+      <footer id="sticky-footer" class="footer-static-bottom py-3 bg-dark text-white-50">
+            <div class="container text-left">
+              <small> <a href="" style="color:white"> Yangon Information Centre </a> is a project created and maintained by
+                <a href="" style="color:white"> UIT Third year Section-C Group-5 </a></small>
+            </div>
+
+             <div class="container text-left">
+               <div class="logo" style="letter-spacing:10px">
+                 <i class="fab fa-facebook-square"></i>
+                 <i class="fab fa-facebook-messenger"></i>
+                 <i class="fab fa-linkedin"></i>
+                 <i class="fab fa-twitter-square"></i>
+                 <i class="fab fa-line"></i>
+               </div>
+               <small>Copyright &copy; <a href="#" style="color:white">Yangon Information Centre 2019</a></small>
+             </div>
+      </footer>
+    </body>
+
+</html>

@@ -1,0 +1,2 @@
+
+<?php echo $__env->make('layouts.listing', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/htet_paing_htun/UniProject/LocalInformationCentre/resources/views/hotels.blade.php ENDPATH**/ ?>
